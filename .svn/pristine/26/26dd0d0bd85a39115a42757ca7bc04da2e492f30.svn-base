@@ -1,0 +1,275 @@
+. 2022-01-18 09:34:57.487 --------------------------------------------------------------------------
+. 2022-01-18 09:34:57.488 WinSCP Version 5.19.4 (Build 11829 2021-10-24) (OS 10.0.19043 - Windows 10 Enterprise)
+. 2022-01-18 09:34:57.488 Configuration: HKCU\Software\Martin Prikryl\WinSCP 2\
+. 2022-01-18 09:34:57.488 Log level: Normal, Rotating after: 5M, Keeping at most 5 logs
+. 2022-01-18 09:34:57.488 Local account: STGROUP\admin.jyousaf
+. 2022-01-18 09:34:57.488 Working directory: C:\DataProjects\PRD_DavePCRSDataMigration\DataExtract\DeltaContracts\WorkingDirectory
+. 2022-01-18 09:34:57.488 Process ID: 52768
+. 2022-01-18 09:34:57.498 Ancestor processes: DtsDebugHost, devenv, ...
+. 2022-01-18 09:34:57.498 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe" /script="C:\DataProjects\PRD_DavePCRSDataMigration\DataExtract\DeltaContracts\WorkingDirectory\DeltaCommands.txt" /log="C:\DataProjects\PRD_DavePCRSDataMigration\DataExtract\DeltaContracts\WorkingDirectory\Deltaupload.log" /logsize=5*5M
+. 2022-01-18 09:34:57.498 Time zone: Current: GMT-5, Standard: GMT-5 (Eastern Standard Time), DST: GMT-4 (Eastern Daylight Time), DST Start: 2022-03-13, DST End: 2022-11-06
+. 2022-01-18 09:34:57.499 Login time: January 18, 2022 9:34:57 AM
+. 2022-01-18 09:34:57.499 --------------------------------------------------------------------------
+. 2022-01-18 09:34:57.499 Script: Retrospectively logging previous script records:
+> 2022-01-18 09:34:57.499 Script: open ftp://SYMTuser:***@13.71.191.58/ConversionDataContracts/WorkingDirectory
+. 2022-01-18 09:34:57.499 --------------------------------------------------------------------------
+. 2022-01-18 09:34:57.499 Session name: SYMTuser@13.71.191.58 (Ad-Hoc site)
+. 2022-01-18 09:34:57.499 Host name: 13.71.191.58 (Port: 21)
+. 2022-01-18 09:34:57.499 User name: SYMTuser (Password: Yes, Key file: No, Passphrase: No)
+. 2022-01-18 09:34:57.499 Transfer Protocol: FTP
+. 2022-01-18 09:34:57.499 Ping type: Dummy, Ping interval: 30 sec; Timeout: 15 sec
+. 2022-01-18 09:34:57.499 Disable Nagle: No
+. 2022-01-18 09:34:57.499 Proxy: None
+. 2022-01-18 09:34:57.499 Send buffer: 262144
+. 2022-01-18 09:34:57.499 UTF: Auto
+. 2022-01-18 09:34:57.499 FTPS: None [Client certificate: No]
+. 2022-01-18 09:34:57.499 FTP: Passive: Yes [Force IP: Auto]; MLSD: Auto [List all: Auto]; HOST: Auto
+. 2022-01-18 09:34:57.499 Local directory: default, Remote directory: /ConversionDataContracts/WorkingDirectory, Update: Yes, Cache: Yes
+. 2022-01-18 09:34:57.499 Cache directory changes: Yes, Permanent: Yes
+. 2022-01-18 09:34:57.499 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2022-01-18 09:34:57.499 Timezone offset: 0h 0m
+. 2022-01-18 09:34:57.499 --------------------------------------------------------------------------
+< 2022-01-18 09:34:57.504 Script: Connecting to 13.71.191.58 ...
+. 2022-01-18 09:34:57.504 Connecting to 13.71.191.58 ...
+. 2022-01-18 09:34:57.523 Connected with 13.71.191.58. Waiting for welcome message...
+< 2022-01-18 09:34:57.541 220-FileZilla Server 0.9.53 beta
+< 2022-01-18 09:34:57.541 220-written by Tim Kosse (tim.kosse@filezilla-project.org)
+< 2022-01-18 09:34:57.541 220 Please visit https://filezilla-project.org/
+> 2022-01-18 09:34:57.541 USER SYMTuser
+< 2022-01-18 09:34:57.559 331 Password required for symtuser
+> 2022-01-18 09:34:57.559 PASS ************
+< 2022-01-18 09:34:57.580 230 Logged on
+> 2022-01-18 09:34:57.580 SYST
+. 2022-01-18 09:34:57.603 FileZilla server detected.
+< 2022-01-18 09:34:57.603 215 UNIX emulated by FileZilla
+> 2022-01-18 09:34:57.603 FEAT
+< 2022-01-18 09:34:57.620 211-Features:
+< 2022-01-18 09:34:57.620  MDTM
+< 2022-01-18 09:34:57.621  REST STREAM
+< 2022-01-18 09:34:57.621  SIZE
+< 2022-01-18 09:34:57.621  MLST type*;size*;modify*;
+< 2022-01-18 09:34:57.621  MLSD
+< 2022-01-18 09:34:57.621  AUTH SSL
+< 2022-01-18 09:34:57.621  AUTH TLS
+< 2022-01-18 09:34:57.621  PROT
+< 2022-01-18 09:34:57.621  PBSZ
+< 2022-01-18 09:34:57.621  UTF8
+< 2022-01-18 09:34:57.621  CLNT
+< 2022-01-18 09:34:57.621  MFMT
+< 2022-01-18 09:34:57.621  EPSV
+< 2022-01-18 09:34:57.621  EPRT
+< 2022-01-18 09:34:57.621 211 End
+> 2022-01-18 09:34:57.621 CLNT WinSCP-release-5.19.4
+< 2022-01-18 09:34:57.633 200 Don't care
+> 2022-01-18 09:34:57.633 OPTS UTF8 ON
+< 2022-01-18 09:34:57.651 202 UTF8 mode is always enabled. No need to send this command.
+< 2022-01-18 09:34:57.651 Script: Connected
+. 2022-01-18 09:34:57.651 Connected
+. 2022-01-18 09:34:57.651 --------------------------------------------------------------------------
+. 2022-01-18 09:34:57.651 Using FTP protocol.
+. 2022-01-18 09:34:57.652 Doing startup conversation with host.
+< 2022-01-18 09:34:57.652 Script: Starting the session...
+> 2022-01-18 09:34:57.652 PWD
+< 2022-01-18 09:34:57.675 257 "/" is current directory.
+. 2022-01-18 09:34:57.675 Changing directory to "/ConversionDataContracts/WorkingDirectory".
+> 2022-01-18 09:34:57.675 CWD /ConversionDataContracts/WorkingDirectory
+< 2022-01-18 09:34:57.699 250 CWD successful. "/ConversionDataContracts/WorkingDirectory" is current directory.
+. 2022-01-18 09:34:57.699 Getting current directory name.
+> 2022-01-18 09:34:57.699 PWD
+< 2022-01-18 09:34:57.724 257 "/ConversionDataContracts/WorkingDirectory" is current directory.
+. 2022-01-18 09:34:57.725 Startup conversation with host finished.
+< 2022-01-18 09:34:57.725 Script: Session started.
+< 2022-01-18 09:34:57.725 Script: Active session: [1] SYMTuser@13.71.191.58
+> 2022-01-18 09:34:57.725 Script: PUT "C:\DataProjects\PRD_DavePCRSDataMigration\DataExtract\DeltaContracts\*CONTRACT_DETAILS*.txt"
+. 2022-01-18 09:34:57.726 Copying 2 files/directories to remote directory "/ConversionDataContracts/WorkingDirectory" - total size: 9,456,920
+. 2022-01-18 09:34:57.726   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2022-01-18 09:34:57.726   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2022-01-18 09:34:57.726   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2022-01-18 09:34:57.726 File: 'C:\DataProjects\PRD_DavePCRSDataMigration\DataExtract\DeltaContracts\SYMT_CONTRACT_DETAILS_202201171512.txt' [2022-01-17T20:12:38.253Z] [4728460]
+. 2022-01-18 09:34:57.735 Copying "C:\DataProjects\PRD_DavePCRSDataMigration\DataExtract\DeltaContracts\SYMT_CONTRACT_DETAILS_202201171512.txt" to remote directory started.
+. 2022-01-18 09:34:57.735 Binary transfer mode selected.
+. 2022-01-18 09:34:57.736 Starting upload of C:\DataProjects\PRD_DavePCRSDataMigration\DataExtract\DeltaContracts\SYMT_CONTRACT_DETAILS_202201171512.txt
+> 2022-01-18 09:34:57.736 TYPE I
+< 2022-01-18 09:34:57.751 200 Type set to I
+> 2022-01-18 09:34:57.751 PASV
+< 2022-01-18 09:34:57.764 227 Entering Passive Mode (13,71,191,58,19,141)
+> 2022-01-18 09:34:57.765 STOR SYMT_CONTRACT_DETAILS_202201171512.txt
+. 2022-01-18 09:34:57.765 Connecting to 13.71.191.58:5005 ...
+< 2022-01-18 09:34:57.803 150 Opening data channel for file upload to server of "/ConversionDataContracts/WorkingDirectory/SYMT_CONTRACT_DETAILS_202201171512.txt"
+< 2022-01-18 09:35:01.664 226 Successfully transferred "/ConversionDataContracts/WorkingDirectory/SYMT_CONTRACT_DETAILS_202201171512.txt"
+> 2022-01-18 09:35:01.665 MFMT 20220117201238 SYMT_CONTRACT_DETAILS_202201171512.txt
+< 2022-01-18 09:35:01.682 213 modify=20220117201238; /ConversionDataContracts/WorkingDirectory/SYMT_CONTRACT_DETAILS_202201171512.txt
+. 2022-01-18 09:35:01.682 Upload successful
+. 2022-01-18 09:35:01.682 Transfer done: 'C:\DataProjects\PRD_DavePCRSDataMigration\DataExtract\DeltaContracts\SYMT_CONTRACT_DETAILS_202201171512.txt' => '/ConversionDataContracts/WorkingDirectory/SYMT_CONTRACT_DETAILS_202201171512.txt' [4728460]
+. 2022-01-18 09:35:01.682 File: 'C:\DataProjects\PRD_DavePCRSDataMigration\DataExtract\DeltaContracts\SYMT_CONTRACT_DETAILS_202201180934.txt' [2022-01-18T14:34:36.902Z] [4728460]
+. 2022-01-18 09:35:01.682 Copying "C:\DataProjects\PRD_DavePCRSDataMigration\DataExtract\DeltaContracts\SYMT_CONTRACT_DETAILS_202201180934.txt" to remote directory started.
+. 2022-01-18 09:35:01.682 Binary transfer mode selected.
+. 2022-01-18 09:35:01.683 Starting upload of C:\DataProjects\PRD_DavePCRSDataMigration\DataExtract\DeltaContracts\SYMT_CONTRACT_DETAILS_202201180934.txt
+> 2022-01-18 09:35:01.683 TYPE I
+< 2022-01-18 09:35:01.703 200 Type set to I
+> 2022-01-18 09:35:01.703 PASV
+< 2022-01-18 09:35:01.717 227 Entering Passive Mode (13,71,191,58,19,143)
+> 2022-01-18 09:35:01.718 STOR SYMT_CONTRACT_DETAILS_202201180934.txt
+. 2022-01-18 09:35:01.718 Connecting to 13.71.191.58:5007 ...
+< 2022-01-18 09:35:01.755 150 Opening data channel for file upload to server of "/ConversionDataContracts/WorkingDirectory/SYMT_CONTRACT_DETAILS_202201180934.txt"
+< 2022-01-18 09:35:05.623 226 Successfully transferred "/ConversionDataContracts/WorkingDirectory/SYMT_CONTRACT_DETAILS_202201180934.txt"
+> 2022-01-18 09:35:05.623 MFMT 20220118143436 SYMT_CONTRACT_DETAILS_202201180934.txt
+< 2022-01-18 09:35:05.644 213 modify=20220118143436; /ConversionDataContracts/WorkingDirectory/SYMT_CONTRACT_DETAILS_202201180934.txt
+. 2022-01-18 09:35:05.644 Upload successful
+. 2022-01-18 09:35:05.644 Transfer done: 'C:\DataProjects\PRD_DavePCRSDataMigration\DataExtract\DeltaContracts\SYMT_CONTRACT_DETAILS_202201180934.txt' => '/ConversionDataContracts/WorkingDirectory/SYMT_CONTRACT_DETAILS_202201180934.txt' [4728460]
+. 2022-01-18 09:35:05.644 Copying finished: Transferred: 9,456,920, Elapsed: 0:00:07, CPS: 1,205,995/s
+> 2022-01-18 09:35:05.644 Script: PUT "C:\DataProjects\PRD_DavePCRSDataMigration\DataExtract\DeltaContracts\*CONTRACT_RATES*.txt"
+. 2022-01-18 09:35:05.645 Copying 2 files/directories to remote directory "/ConversionDataContracts/WorkingDirectory" - total size: 4,909,650
+. 2022-01-18 09:35:05.645   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2022-01-18 09:35:05.645   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2022-01-18 09:35:05.645   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2022-01-18 09:35:05.645 File: 'C:\DataProjects\PRD_DavePCRSDataMigration\DataExtract\DeltaContracts\SYMT_CONTRACT_RATES_202201171512.txt' [2022-01-17T20:12:38.184Z] [2454825]
+. 2022-01-18 09:35:05.653 Copying "C:\DataProjects\PRD_DavePCRSDataMigration\DataExtract\DeltaContracts\SYMT_CONTRACT_RATES_202201171512.txt" to remote directory started.
+. 2022-01-18 09:35:05.653 Binary transfer mode selected.
+. 2022-01-18 09:35:05.653 Starting upload of C:\DataProjects\PRD_DavePCRSDataMigration\DataExtract\DeltaContracts\SYMT_CONTRACT_RATES_202201171512.txt
+> 2022-01-18 09:35:05.653 TYPE I
+< 2022-01-18 09:35:05.673 200 Type set to I
+> 2022-01-18 09:35:05.673 PASV
+< 2022-01-18 09:35:05.696 227 Entering Passive Mode (13,71,191,58,19,142)
+> 2022-01-18 09:35:05.698 STOR SYMT_CONTRACT_RATES_202201171512.txt
+. 2022-01-18 09:35:05.699 Connecting to 13.71.191.58:5006 ...
+< 2022-01-18 09:35:05.731 150 Opening data channel for file upload to server of "/ConversionDataContracts/WorkingDirectory/SYMT_CONTRACT_RATES_202201171512.txt"
+< 2022-01-18 09:35:07.581 226 Successfully transferred "/ConversionDataContracts/WorkingDirectory/SYMT_CONTRACT_RATES_202201171512.txt"
+> 2022-01-18 09:35:07.581 MFMT 20220117201238 SYMT_CONTRACT_RATES_202201171512.txt
+< 2022-01-18 09:35:07.604 213 modify=20220117201238; /ConversionDataContracts/WorkingDirectory/SYMT_CONTRACT_RATES_202201171512.txt
+. 2022-01-18 09:35:07.604 Upload successful
+. 2022-01-18 09:35:07.604 Transfer done: 'C:\DataProjects\PRD_DavePCRSDataMigration\DataExtract\DeltaContracts\SYMT_CONTRACT_RATES_202201171512.txt' => '/ConversionDataContracts/WorkingDirectory/SYMT_CONTRACT_RATES_202201171512.txt' [2454825]
+. 2022-01-18 09:35:07.604 File: 'C:\DataProjects\PRD_DavePCRSDataMigration\DataExtract\DeltaContracts\SYMT_CONTRACT_RATES_202201180934.txt' [2022-01-18T14:34:37.006Z] [2454825]
+. 2022-01-18 09:35:07.604 Copying "C:\DataProjects\PRD_DavePCRSDataMigration\DataExtract\DeltaContracts\SYMT_CONTRACT_RATES_202201180934.txt" to remote directory started.
+. 2022-01-18 09:35:07.604 Binary transfer mode selected.
+. 2022-01-18 09:35:07.604 Starting upload of C:\DataProjects\PRD_DavePCRSDataMigration\DataExtract\DeltaContracts\SYMT_CONTRACT_RATES_202201180934.txt
+> 2022-01-18 09:35:07.604 TYPE I
+< 2022-01-18 09:35:07.626 200 Type set to I
+> 2022-01-18 09:35:07.626 PASV
+< 2022-01-18 09:35:07.644 227 Entering Passive Mode (13,71,191,58,19,145)
+> 2022-01-18 09:35:07.645 STOR SYMT_CONTRACT_RATES_202201180934.txt
+. 2022-01-18 09:35:07.645 Connecting to 13.71.191.58:5009 ...
+< 2022-01-18 09:35:07.685 150 Opening data channel for file upload to server of "/ConversionDataContracts/WorkingDirectory/SYMT_CONTRACT_RATES_202201180934.txt"
+< 2022-01-18 09:35:09.533 226 Successfully transferred "/ConversionDataContracts/WorkingDirectory/SYMT_CONTRACT_RATES_202201180934.txt"
+> 2022-01-18 09:35:09.535 MFMT 20220118143437 SYMT_CONTRACT_RATES_202201180934.txt
+< 2022-01-18 09:35:09.554 213 modify=20220118143437; /ConversionDataContracts/WorkingDirectory/SYMT_CONTRACT_RATES_202201180934.txt
+. 2022-01-18 09:35:09.554 Upload successful
+. 2022-01-18 09:35:09.554 Transfer done: 'C:\DataProjects\PRD_DavePCRSDataMigration\DataExtract\DeltaContracts\SYMT_CONTRACT_RATES_202201180934.txt' => '/ConversionDataContracts/WorkingDirectory/SYMT_CONTRACT_RATES_202201180934.txt' [2454825]
+. 2022-01-18 09:35:09.554 Copying finished: Transferred: 4,909,650, Elapsed: 0:00:03, CPS: 1,278,282/s
+> 2022-01-18 09:35:09.554 Script: PUT "C:\DataProjects\PRD_DavePCRSDataMigration\DataExtract\DeltaContracts\*CONTRACT_CANCELLATIONS*.txt"
+. 2022-01-18 09:35:09.554 Copying 2 files/directories to remote directory "/ConversionDataContracts/WorkingDirectory" - total size: 15,442
+. 2022-01-18 09:35:09.554   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2022-01-18 09:35:09.554   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2022-01-18 09:35:09.554   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2022-01-18 09:35:09.554 File: 'C:\DataProjects\PRD_DavePCRSDataMigration\DataExtract\DeltaContracts\SYMT_CONTRACT_CANCELLATIONS_202201171512.txt' [2022-01-17T20:12:38.132Z] [7721]
+. 2022-01-18 09:35:09.556 Copying "C:\DataProjects\PRD_DavePCRSDataMigration\DataExtract\DeltaContracts\SYMT_CONTRACT_CANCELLATIONS_202201171512.txt" to remote directory started.
+. 2022-01-18 09:35:09.556 Binary transfer mode selected.
+. 2022-01-18 09:35:09.556 Starting upload of C:\DataProjects\PRD_DavePCRSDataMigration\DataExtract\DeltaContracts\SYMT_CONTRACT_CANCELLATIONS_202201171512.txt
+> 2022-01-18 09:35:09.556 TYPE I
+< 2022-01-18 09:35:09.578 200 Type set to I
+> 2022-01-18 09:35:09.578 PASV
+< 2022-01-18 09:35:09.599 227 Entering Passive Mode (13,71,191,58,19,145)
+> 2022-01-18 09:35:09.599 STOR SYMT_CONTRACT_CANCELLATIONS_202201171512.txt
+. 2022-01-18 09:35:09.599 Connecting to 13.71.191.58:5009 ...
+< 2022-01-18 09:35:09.643 150 Opening data channel for file upload to server of "/ConversionDataContracts/WorkingDirectory/SYMT_CONTRACT_CANCELLATIONS_202201171512.txt"
+< 2022-01-18 09:35:09.678 226 Successfully transferred "/ConversionDataContracts/WorkingDirectory/SYMT_CONTRACT_CANCELLATIONS_202201171512.txt"
+> 2022-01-18 09:35:09.678 MFMT 20220117201238 SYMT_CONTRACT_CANCELLATIONS_202201171512.txt
+< 2022-01-18 09:35:09.702 213 modify=20220117201238; /ConversionDataContracts/WorkingDirectory/SYMT_CONTRACT_CANCELLATIONS_202201171512.txt
+. 2022-01-18 09:35:09.702 Upload successful
+. 2022-01-18 09:35:09.702 Transfer done: 'C:\DataProjects\PRD_DavePCRSDataMigration\DataExtract\DeltaContracts\SYMT_CONTRACT_CANCELLATIONS_202201171512.txt' => '/ConversionDataContracts/WorkingDirectory/SYMT_CONTRACT_CANCELLATIONS_202201171512.txt' [7721]
+. 2022-01-18 09:35:09.702 File: 'C:\DataProjects\PRD_DavePCRSDataMigration\DataExtract\DeltaContracts\SYMT_CONTRACT_CANCELLATIONS_202201180934.txt' [2022-01-18T14:34:36.907Z] [7721]
+. 2022-01-18 09:35:09.703 Copying "C:\DataProjects\PRD_DavePCRSDataMigration\DataExtract\DeltaContracts\SYMT_CONTRACT_CANCELLATIONS_202201180934.txt" to remote directory started.
+. 2022-01-18 09:35:09.703 Binary transfer mode selected.
+. 2022-01-18 09:35:09.703 Starting upload of C:\DataProjects\PRD_DavePCRSDataMigration\DataExtract\DeltaContracts\SYMT_CONTRACT_CANCELLATIONS_202201180934.txt
+> 2022-01-18 09:35:09.703 TYPE I
+< 2022-01-18 09:35:09.725 200 Type set to I
+> 2022-01-18 09:35:09.725 PASV
+< 2022-01-18 09:35:09.749 227 Entering Passive Mode (13,71,191,58,19,143)
+> 2022-01-18 09:35:09.750 STOR SYMT_CONTRACT_CANCELLATIONS_202201180934.txt
+. 2022-01-18 09:35:09.750 Connecting to 13.71.191.58:5007 ...
+< 2022-01-18 09:35:09.795 150 Opening data channel for file upload to server of "/ConversionDataContracts/WorkingDirectory/SYMT_CONTRACT_CANCELLATIONS_202201180934.txt"
+< 2022-01-18 09:35:09.826 226 Successfully transferred "/ConversionDataContracts/WorkingDirectory/SYMT_CONTRACT_CANCELLATIONS_202201180934.txt"
+> 2022-01-18 09:35:09.826 MFMT 20220118143436 SYMT_CONTRACT_CANCELLATIONS_202201180934.txt
+< 2022-01-18 09:35:09.848 213 modify=20220118143436; /ConversionDataContracts/WorkingDirectory/SYMT_CONTRACT_CANCELLATIONS_202201180934.txt
+. 2022-01-18 09:35:09.849 Upload successful
+. 2022-01-18 09:35:09.849 Transfer done: 'C:\DataProjects\PRD_DavePCRSDataMigration\DataExtract\DeltaContracts\SYMT_CONTRACT_CANCELLATIONS_202201180934.txt' => '/ConversionDataContracts/WorkingDirectory/SYMT_CONTRACT_CANCELLATIONS_202201180934.txt' [7721]
+. 2022-01-18 09:35:09.849 Copying finished: Transferred: 15,442, Elapsed: 0:00:00, CPS: 54,758/s
+> 2022-01-18 09:35:09.849 Script: PUT "C:\DataProjects\PRD_DavePCRSDataMigration\DataExtract\DeltaContracts\*CONTRACT_BUNDLES*.txt"
+. 2022-01-18 09:35:09.851 Copying 2 files/directories to remote directory "/ConversionDataContracts/WorkingDirectory" - total size: 325,460
+. 2022-01-18 09:35:09.851   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2022-01-18 09:35:09.851   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2022-01-18 09:35:09.851   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2022-01-18 09:35:09.851 File: 'C:\DataProjects\PRD_DavePCRSDataMigration\DataExtract\DeltaContracts\SYMT_CONTRACT_BUNDLES_202201171512.txt' [2022-01-17T20:12:38.209Z] [162730]
+. 2022-01-18 09:35:09.859 Copying "C:\DataProjects\PRD_DavePCRSDataMigration\DataExtract\DeltaContracts\SYMT_CONTRACT_BUNDLES_202201171512.txt" to remote directory started.
+. 2022-01-18 09:35:09.859 Binary transfer mode selected.
+. 2022-01-18 09:35:09.860 Starting upload of C:\DataProjects\PRD_DavePCRSDataMigration\DataExtract\DeltaContracts\SYMT_CONTRACT_BUNDLES_202201171512.txt
+> 2022-01-18 09:35:09.860 TYPE I
+< 2022-01-18 09:35:09.885 200 Type set to I
+> 2022-01-18 09:35:09.885 PASV
+< 2022-01-18 09:35:09.905 227 Entering Passive Mode (13,71,191,58,19,142)
+> 2022-01-18 09:35:09.906 STOR SYMT_CONTRACT_BUNDLES_202201171512.txt
+. 2022-01-18 09:35:09.906 Connecting to 13.71.191.58:5006 ...
+< 2022-01-18 09:35:09.940 150 Opening data channel for file upload to server of "/ConversionDataContracts/WorkingDirectory/SYMT_CONTRACT_BUNDLES_202201171512.txt"
+< 2022-01-18 09:35:10.079 226 Successfully transferred "/ConversionDataContracts/WorkingDirectory/SYMT_CONTRACT_BUNDLES_202201171512.txt"
+> 2022-01-18 09:35:10.080 MFMT 20220117201238 SYMT_CONTRACT_BUNDLES_202201171512.txt
+< 2022-01-18 09:35:10.109 213 modify=20220117201238; /ConversionDataContracts/WorkingDirectory/SYMT_CONTRACT_BUNDLES_202201171512.txt
+. 2022-01-18 09:35:10.109 Upload successful
+. 2022-01-18 09:35:10.109 Transfer done: 'C:\DataProjects\PRD_DavePCRSDataMigration\DataExtract\DeltaContracts\SYMT_CONTRACT_BUNDLES_202201171512.txt' => '/ConversionDataContracts/WorkingDirectory/SYMT_CONTRACT_BUNDLES_202201171512.txt' [162730]
+. 2022-01-18 09:35:10.109 File: 'C:\DataProjects\PRD_DavePCRSDataMigration\DataExtract\DeltaContracts\SYMT_CONTRACT_BUNDLES_202201180934.txt' [2022-01-18T14:34:37.009Z] [162730]
+. 2022-01-18 09:35:10.110 Copying "C:\DataProjects\PRD_DavePCRSDataMigration\DataExtract\DeltaContracts\SYMT_CONTRACT_BUNDLES_202201180934.txt" to remote directory started.
+. 2022-01-18 09:35:10.110 Binary transfer mode selected.
+. 2022-01-18 09:35:10.110 Starting upload of C:\DataProjects\PRD_DavePCRSDataMigration\DataExtract\DeltaContracts\SYMT_CONTRACT_BUNDLES_202201180934.txt
+> 2022-01-18 09:35:10.110 TYPE I
+< 2022-01-18 09:35:10.144 200 Type set to I
+> 2022-01-18 09:35:10.144 PASV
+< 2022-01-18 09:35:10.170 227 Entering Passive Mode (13,71,191,58,19,145)
+> 2022-01-18 09:35:10.171 STOR SYMT_CONTRACT_BUNDLES_202201180934.txt
+. 2022-01-18 09:35:10.171 Connecting to 13.71.191.58:5009 ...
+< 2022-01-18 09:35:10.209 150 Opening data channel for file upload to server of "/ConversionDataContracts/WorkingDirectory/SYMT_CONTRACT_BUNDLES_202201180934.txt"
+< 2022-01-18 09:35:10.349 226 Successfully transferred "/ConversionDataContracts/WorkingDirectory/SYMT_CONTRACT_BUNDLES_202201180934.txt"
+> 2022-01-18 09:35:10.349 MFMT 20220118143437 SYMT_CONTRACT_BUNDLES_202201180934.txt
+< 2022-01-18 09:35:10.372 213 modify=20220118143437; /ConversionDataContracts/WorkingDirectory/SYMT_CONTRACT_BUNDLES_202201180934.txt
+. 2022-01-18 09:35:10.372 Upload successful
+. 2022-01-18 09:35:10.372 Transfer done: 'C:\DataProjects\PRD_DavePCRSDataMigration\DataExtract\DeltaContracts\SYMT_CONTRACT_BUNDLES_202201180934.txt' => '/ConversionDataContracts/WorkingDirectory/SYMT_CONTRACT_BUNDLES_202201180934.txt' [162730]
+. 2022-01-18 09:35:10.372 Copying finished: Transferred: 325,460, Elapsed: 0:00:00, CPS: 707,267/s
+> 2022-01-18 09:35:10.372 Script: PUT "C:\DataProjects\PRD_DavePCRSDataMigration\DataExtract\DeltaContracts\*CONTRACT_NOTES*.txt"
+. 2022-01-18 09:35:10.373 Copying 2 files/directories to remote directory "/ConversionDataContracts/WorkingDirectory" - total size: 806,170
+. 2022-01-18 09:35:10.373   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2022-01-18 09:35:10.373   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2022-01-18 09:35:10.373   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2022-01-18 09:35:10.373 File: 'C:\DataProjects\PRD_DavePCRSDataMigration\DataExtract\DeltaContracts\SYMT_CONTRACT_NOTES_202201171512.txt' [2022-01-17T20:12:38.257Z] [403085]
+. 2022-01-18 09:35:10.380 Copying "C:\DataProjects\PRD_DavePCRSDataMigration\DataExtract\DeltaContracts\SYMT_CONTRACT_NOTES_202201171512.txt" to remote directory started.
+. 2022-01-18 09:35:10.380 Binary transfer mode selected.
+. 2022-01-18 09:35:10.380 Starting upload of C:\DataProjects\PRD_DavePCRSDataMigration\DataExtract\DeltaContracts\SYMT_CONTRACT_NOTES_202201171512.txt
+> 2022-01-18 09:35:10.380 TYPE I
+< 2022-01-18 09:35:10.405 200 Type set to I
+> 2022-01-18 09:35:10.405 PASV
+< 2022-01-18 09:35:10.427 227 Entering Passive Mode (13,71,191,58,19,138)
+> 2022-01-18 09:35:10.427 STOR SYMT_CONTRACT_NOTES_202201171512.txt
+. 2022-01-18 09:35:10.427 Connecting to 13.71.191.58:5002 ...
+< 2022-01-18 09:35:10.459 150 Opening data channel for file upload to server of "/ConversionDataContracts/WorkingDirectory/SYMT_CONTRACT_NOTES_202201171512.txt"
+< 2022-01-18 09:35:11.042 226 Successfully transferred "/ConversionDataContracts/WorkingDirectory/SYMT_CONTRACT_NOTES_202201171512.txt"
+> 2022-01-18 09:35:11.042 MFMT 20220117201238 SYMT_CONTRACT_NOTES_202201171512.txt
+< 2022-01-18 09:35:11.060 213 modify=20220117201238; /ConversionDataContracts/WorkingDirectory/SYMT_CONTRACT_NOTES_202201171512.txt
+. 2022-01-18 09:35:11.060 Upload successful
+. 2022-01-18 09:35:11.060 Transfer done: 'C:\DataProjects\PRD_DavePCRSDataMigration\DataExtract\DeltaContracts\SYMT_CONTRACT_NOTES_202201171512.txt' => '/ConversionDataContracts/WorkingDirectory/SYMT_CONTRACT_NOTES_202201171512.txt' [403085]
+. 2022-01-18 09:35:11.060 File: 'C:\DataProjects\PRD_DavePCRSDataMigration\DataExtract\DeltaContracts\SYMT_CONTRACT_NOTES_202201180934.txt' [2022-01-18T14:34:37.003Z] [403085]
+. 2022-01-18 09:35:11.061 Copying "C:\DataProjects\PRD_DavePCRSDataMigration\DataExtract\DeltaContracts\SYMT_CONTRACT_NOTES_202201180934.txt" to remote directory started.
+. 2022-01-18 09:35:11.061 Binary transfer mode selected.
+. 2022-01-18 09:35:11.061 Starting upload of C:\DataProjects\PRD_DavePCRSDataMigration\DataExtract\DeltaContracts\SYMT_CONTRACT_NOTES_202201180934.txt
+> 2022-01-18 09:35:11.061 TYPE I
+< 2022-01-18 09:35:11.080 200 Type set to I
+> 2022-01-18 09:35:11.080 PASV
+< 2022-01-18 09:35:11.100 227 Entering Passive Mode (13,71,191,58,19,141)
+> 2022-01-18 09:35:11.100 STOR SYMT_CONTRACT_NOTES_202201180934.txt
+. 2022-01-18 09:35:11.100 Connecting to 13.71.191.58:5005 ...
+< 2022-01-18 09:35:11.136 150 Opening data channel for file upload to server of "/ConversionDataContracts/WorkingDirectory/SYMT_CONTRACT_NOTES_202201180934.txt"
+< 2022-01-18 09:35:11.764 226 Successfully transferred "/ConversionDataContracts/WorkingDirectory/SYMT_CONTRACT_NOTES_202201180934.txt"
+> 2022-01-18 09:35:11.765 MFMT 20220118143437 SYMT_CONTRACT_NOTES_202201180934.txt
+< 2022-01-18 09:35:11.789 213 modify=20220118143437; /ConversionDataContracts/WorkingDirectory/SYMT_CONTRACT_NOTES_202201180934.txt
+. 2022-01-18 09:35:11.789 Upload successful
+. 2022-01-18 09:35:11.789 Transfer done: 'C:\DataProjects\PRD_DavePCRSDataMigration\DataExtract\DeltaContracts\SYMT_CONTRACT_NOTES_202201180934.txt' => '/ConversionDataContracts/WorkingDirectory/SYMT_CONTRACT_NOTES_202201180934.txt' [403085]
+. 2022-01-18 09:35:11.789 Copying finished: Transferred: 806,170, Elapsed: 0:00:01, CPS: 587,638/s
+> 2022-01-18 09:35:11.789 Script: exit
+. 2022-01-18 09:35:11.789 Script: Exit code: 0
+. 2022-01-18 09:35:11.796 Disconnected from server

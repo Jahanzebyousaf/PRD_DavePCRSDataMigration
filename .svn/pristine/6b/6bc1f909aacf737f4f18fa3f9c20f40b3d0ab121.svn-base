@@ -1,0 +1,18 @@
+# open ftpes://SYMTuser:20%24ym%40tech%217@ftp1.pcrsdev.com/ConversionDataContracts/WorkingDirectory -certificate="e5:c9:79:d8:19:33:06:75:b2:6d:bb:d3:0c:e5:18:70:80:e3:03:3a"
+#open ftpes://SYMTuser:20%24ym%40tech%217@ftp1.pcrsdev.com/ConversionDataContracts/WorkingDirectory -certificate="c9:39:92:a8:4c:ae:2f:a2:47:cd:1a:67:df:b8:14:f0:4b:15:87:f0"
+
+open ftp://SYMTuser:20%24ym%40tech%217@13.71.191.58/ConversionDataContracts/WorkingDirectory
+
+PUT "C:\DataProjects\PRD_DavePCRSDataMigration\DataExtract\DeltaContracts\*CONTRACT_DETAILS*.txt"
+PUT "C:\DataProjects\PRD_DavePCRSDataMigration\DataExtract\DeltaContracts\*CONTRACT_RATES*.txt"
+PUT "C:\DataProjects\PRD_DavePCRSDataMigration\DataExtract\DeltaContracts\*CONTRACT_CANCELLATIONS*.txt"
+PUT "C:\DataProjects\PRD_DavePCRSDataMigration\DataExtract\DeltaContracts\*CONTRACT_BUNDLES*.txt"
+PUT "C:\DataProjects\PRD_DavePCRSDataMigration\DataExtract\DeltaContracts\*CONTRACT_NOTES*.txt"
+
+# PUT \\C:\DataProjects\PRD_DavePCRSDataMigration\DataExtract\DeltaContracts\*CONTRACT_Cancellation_*.txt use this if you are reading from Server
+
+
+exit
+
+# Execute the script using a command like:
+# "C:\Program Files (x86)\WinSCP\WinSCP.exe" /log="C:\writable\path\to\log\WinSCP.log" /ini=nul /script="C:\path\to\script\script.txt"

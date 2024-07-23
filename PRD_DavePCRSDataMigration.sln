@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33027.164
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "PRD_DavePCRSDataMigration", "PRD_DavePCRSDataMigration\PRD_DavePCRSDataMigration.dtproj", "{269980B2-33DB-4533-8499-E06F4006AE2D}"
+EndProject
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "ContactLossCode", "..\ContactLossCode\ContractLossCode\ContactLossCode\ContactLossCode.dtproj", "{5C740AFA-2849-46D5-9034-B7F3D743FAC2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{269980B2-33DB-4533-8499-E06F4006AE2D}.Development|Default.ActiveCfg = Development
+		{269980B2-33DB-4533-8499-E06F4006AE2D}.Development|Default.Build.0 = Development
+		{5C740AFA-2849-46D5-9034-B7F3D743FAC2}.Development|Default.ActiveCfg = Development
+		{5C740AFA-2849-46D5-9034-B7F3D743FAC2}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2DFB0D88-9C0E-4A92-9C79-A3225414EC34}
+	EndGlobalSection
+EndGlobal
